@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body class="flex">
+  <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+   <span class="sr-only">Open sidebar</span>
+   <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+   </svg>
+</button>
+
+<aside id="default-sidebar" class="fixed top-0 left-0 md:left-11 z-40 bg-gray-100 w-64 h-full transition-transform -translate-x-full md:translate-x-0" aria-label="Sidebar">
+  <div class="flex justify-center mt-20 relative">
+      <img src="sidebar img.jpg" alt="Profile Image" class="rounded-full w-40 h-40 border-4 border-white">
+    </div>
+
+    <!-- Name -->
+    <h2 class="text-2xl font-bold text-center my-1">Saad Ahmed</h2>
+    <p class="text-sm  text-gray-500 text-center  my-1"><span class="text-blue-500">UI/UX/Designer</span> in Pakistan</p>
+
+      <ul class="text-center my-12 space-y-4">
+      <li class="my-2">
+        <a href="#" class="block text-blue-500 text-sm hover:text-gray-800 font-sans underline underline-offset-4">HOME</a>
+      </li>
+      <li class="my-2">
+        <a href="#about" class="block text-gray-500 text-sm hover:text-gray-800 font-sans  hover:underline  hover:decoration-blue-600 underline-offset-4">ABOUT</a>
+      </li>
+      <li class="my-2">
+        <a href="#service" class="block text-gray-500 text-sm hover:text-gray-800 font-sans  hover:underline hover:decoration-blue-600 underline-offset-4">SERVICES</a>
+      </li>
+      <li class="my-2">
+        <a href="#education" class="block text-gray-500 text-sm hover:text-gray-800 font-sans  hover:underline hover:decoration-blue-600 underline-offset-4">EDUCATION</a>
+      </li>
+      <li class="my-2">
+        <a href="#" class="block text-gray-500 text-sm hover:text-gray-800 font-sans  hover:underline hover:decoration-blue-600 underline-offset-4">WORK</a>
+      </li>
+      <li class="my-2">
+        <a href="#contact" class="block text-gray-500 text-sm hover:text-gray-800 font-sans  hover:underline hover:decoration-blue-600 underline-offset-4">CONTACT</a>
+      </li>
+      <li class=" bg-gray-600 rounded-full">
+          <button id="close-sidebar" class=" absolute top-6 right-6 w-8 h-8 bg-gray-400 rounded-full md:hidden focus:outline-none focus:bg-gray-500">
+            <img class="w-5 h-5 mx-auto " src="back arrow.png" alt="">
+          </button>
+      </li>
+    </ul>    
+   </div>
+   
+</aside>
+
+  <!-- Main Content -->
+  <div class=" bg-white md:pl-[30%]">
+    <div class="bg-white flex flex-col-reverse md:flex md:flex-row justify-around items-center">
+        
+        <div class="-ml-24 md:ml-11 mt-8 mb-24 animate-">
+            <h1 class="md:text-5xl text-4xl font-serif text-gray-800 font-bold md:sm:mb-8 -ml-2 mb-10">I am a Designer</h1>
+            <!-- Download CV Button -->
+            <a href="SaadAhmedCv.pdf" download class="text-gray-500 font-bold py-2 px-4 border-2 border-gray-400 hover:text-black hover:border-black ">
+            Download CV
+            </a>
+        </div>
+        <!-- Image and Heading -->
+        <div class="md:mr-20">
+        <img src="banner img.png" alt="Main Image" class="md:w-[42rem] md:h-[38rem] mt-16">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="mt-8 w-3/4 md:mx-14  " id="about">
+        <h2 class="text-xs text-gray-500 w-3/4 font-serif tracking-[1em]">ABOUT</h2>
+        <!-- Subheading - How Am I? -->
+        <h2 class="text-xl font-semibold mb-14 mt-7 text-gray-700 font-serif tracking-[0.5em]">WHO AM I?</h2>
+        <!-- First Paragraph with Fade In animation -->
+        <p class="text-gray-600 mb-4 animate-fadeIn">I epitomize the quintessence of creativity, perpetually driven by an insatiable curiosity to unravel the enigmatic facets of design. My fervor for artistic expression intertwines harmoniously with an unyielding pursuit of excellence, manifesting in designs that evoke a sense of awe and wonder.</p>
+        <!-- Second Paragraph with Slide Up animation -->
+        <p class="text-gray-600 mb-4 animate-slideUp">With a profound predilection for innovation, I tread the path of design with a discerning eye and meticulous craftsmanship. My acumen in fusing aesthetics and functionality allows me to engender captivating user experiences that resonate on a profound level, transcending the conventional boundaries of design.</p>
+    </div>
+
+    <!-- Service Section -->
+    <div class="mt-8 w-3/4 md:mx-14 " id="service">
+        <!-- Subheading - What Do I Do? -->
+        <h2 class="mt-24 text-xs text-gray-500 w-3/4 font-serif tracking-[0.5em]">WHAT DO I DO?</h2>
+        <!-- Expertise List with Animations -->
+        <h2 class="text-xl font-semibold mb-14 mt-7 text-gray-700 font-serif tracking-[0.2em]">HERE ARE SOME OF MY<br> EXPERTISE</h2>
+        <ul class="mt-24 w-[150%] md:w-auto md:flex">
+          <div>
+          <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-white shadow-sm shadow-gray-400  mr-20 mb-24 border-2 border-gray-200  relative flex flex-col items-center ">
+            <div class="hexagon-container absolute -top-24">
+              <div class="hexagon-blue flex justify-center items-center"><img class="w-14 h-14"  src="user research.png" alt=""></div>
+            </div>
+            <div class="text-gray-800 mt-16">USER RESEARCH</div>
+            <div class="text-gray-500 text-center w-[88%] py-6">Gathering insights about user behaviors and needs to inform design decisions effectively.</div>
+            <hr class="bg-[#2c98f0] absolute -bottom-1 w-full h-1">
+          </li>
+          <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-white shadow-sm shadow-gray-400  mr-20 mb-24 border-2 border-gray-200  relative flex flex-col items-center ">
+            <div class="hexagon-container absolute -top-24">
+              <div class="hexagon-red flex justify-center items-center"><img class="w-14 h-14"  src="wireframing.png" alt=""></div>
+            </div>
+            <div class="text-gray-800 mt-16">WIREFRAMING</div>
+            <div class="text-gray-500 text-center w-[88%] py-6"> Creating low-fidelity blueprints outlining the interface layout and functionality.</div>
+            <hr class="bg-[#ec5453] absolute -bottom-1 w-full h-1">
+          </li>
+          <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-white shadow-sm shadow-gray-400  mr-20 mb-24 border-2 border-gray-200  relative flex flex-col items-center ">
+            <div class="hexagon-container absolute -top-24">
+              <div class="hexagon-yellow flex justify-center items-center"><img class="w-14 h-14"  src="prototyping.png" alt=""></div>
+            </div>
+            <div class="text-gray-800 mt-16">PROTOTYPING</div>
+            <div class="text-gray-500 text-center w-[88%] py-6">Building interactive models to visualize and test user interactions and flow.</div>
+            <hr class="bg-[#f9bf3f] absolute -bottom-1 w-full h-1">
+          </li>
+          </div>
+          <div>
+          <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-white shadow-sm shadow-gray-400  mr-20 mb-24 border-2 border-gray-200  relative flex flex-col items-center ">
+            <div class="hexagon-container absolute -top-24">
+              <div class="hexagon-purple flex justify-center items-center"><img class="w-14 h-14"  src="visual design.png" alt=""></div>
+            </div>
+            <div class="text-gray-800 mt-16">VISUAL DESIGN</div>
+            <div class="text-gray-500 text-center w-[88%] py-6">Crafting aesthetically pleasing elements like colors, icons, typography, and imagery.</div>
+            <hr class="bg-[#a84cb8] absolute -bottom-1 w-full h-1">
+          </li>
+          <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-white shadow-sm shadow-gray-400  mr-20 mb-24 border-2 border-gray-200  relative flex flex-col items-center ">
+            <div class="hexagon-container absolute -top-24">
+              <div class="hexagon-green flex justify-center items-center"><img class="w-14 h-14"  src="responsive design.png" alt=""></div>
+            </div>
+            <div class="text-gray-800 mt-16">RESPONSIVE DESIGN</div>
+            <div class="text-gray-500 text-center w-[88%] py-6">Ensuring the interface works seamlessly across various devices and screen sizes.</div>
+            <hr class="bg-[#2fa499] absolute -bottom-1 w-full h-1">
+          </li>
+          <li class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 bg-white shadow-sm shadow-gray-400  mr-20 mb-24 border-2 border-gray-200  relative flex flex-col items-center ">
+            <div class="hexagon-container absolute -top-24">
+              <div class="hexagon-dblue flex justify-center items-center"><img class="w-14 h-14"  src="accessibility.png" alt=""></div>
+            </div>
+            <div class="text-gray-800 mt-16">ACCECABILITY</div>
+            <div class="text-gray-500 text-center w-[88%] py-6">Designing inclusively to make the product usable for all, including users with disabilities.</div>
+            <hr class="bg-[#4054b2] absolute -bottom-1 w-full h-1">
+          </li>
+          </div>
+        </ul>
+    </div>
+
+    <!-- EDUCATION -->
+     <h2 class="mt-24 text-xs text-gray-500 w-3/4 tracking-[0.5em] font-serif" id="education">EDUCATION</h2>
+        <!-- Expertise List with Animations -->
+        <h2 class="text-xl font-semibold mb-14 mt-7 font-serif text-gray-700 tracking-[0.2em]">EDUCATION</h2>
+    <div class="accordion space-y-2 mb-28 md:w-3/4 w-[85%] ">
+      <div class="accordion-item">
+        <button class="accordion-title bg-gray-200 text-gray-600 hover:bg-blue-400 px-4 py-3 rounded-md w-full text-left">
+          BACHELOR DEGREE OF COMPUTER SCIENCE
+        </button>
+        <div class="accordion-content hidden bg-white p-4 text-gray-500 border">
+        Lahore Leads University's Computer Science degree offers a comprehensive curriculum, cutting-edge skills, and industry-relevant training, empowering graduates to excel in diverse technology roles.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-title bg-gray-200 text-gray-600 hover:bg-blue-400 px-4 py-3 rounded-md w-full text-left">
+          INTERMEDIATE IN COMPUTER SCIENCE
+        </button>
+        <div class="accordion-content hidden bg-white p-4 text-gray-500 border">
+          Concordia College's Intermediate in Computer Science program provides foundational knowledge in coding, software development, and problem-solving. Supported by dedicated faculty and a nurturing environment, students are equipped for higher studies or entering the workforce with confidence in the field.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-title bg-gray-200 text-gray-600 hover:bg-blue-400 px-4 py-3 rounded-md w-full text-left">
+          METRICULATION IN BIOLOGY
+        </button>
+        <div class="accordion-content hidden bg-white p-4 text-gray-500 border">
+          Studying Matriculation in Biology at Lahore Grammar School provides a strong foundation in the biological sciences. The program fosters a conducive learning environment, enabling students to develop a deep understanding of biological concepts and prepare for further studies or careers in related fields.
+        </div>
+      </div>
+      <!-- Add more accordion items as needed -->
+    </div>
+  
+
+    <!-- WORK -->
+
+
+    <div class="work mb-24">
+      <h2 class="mt-24 text-xs text-gray-500 w-3/4 tracking-[0.5em] font-serif" id="work">MY WORK</h2>
+        <!-- Expertise List with Animations -->
+      <h2 class="text-xl font-semibold mb-14 font-serif mt-7 text-gray-700 tracking-[0.2em]">RECENT WORK</h2>
+      <div>
+        <!-- work code here -->
+      </div>
+    </div>
+
+
+
+
+    <!-- CONTACT -->
+    <h2 class="mt-24 text-xs text-gray-500 w-3/4 tracking-[0.5em] font-serif" id="work">GET IN TOUCH</h2>
+        <!-- Expertise List with Animations -->
+      <h2 class="text-xl font-semibold mb-14 font-serif mt-7 text-gray-700 tracking-[0.2em]">CONTACT</h2>
+    <div id="contact" class="mb-20 flex flex-col sm:flex-row justify-between">
+      <div class="left">  
+        <div class="flex items-center mb-5 " >
+            <div class="w-20 h-20 bg-gray-100 border-gray-200 border-[1px] flex items-center">
+              <img class="w-10 h-10 mx-auto" src="mail icon.png" alt="">
+            </div>
+            <div class="ml-2">
+              <p><a  class="text-blue-300 hover:underline" href="mailto: saadahmeddev01@gmail.com">saadahmeddev01@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="flex items-center mb-5 " >
+            <div class="w-20 h-20 bg-gray-100 border-gray-200 border-[1px] flex items-center">
+              <img class="w-10 h-10 mx-auto" src="linkedin icon.png" alt="">
+            </div>
+            <div class="ml-2">
+              <p><a  class="text-blue-300 hover:underline" href="https://www.linkedin.com/in/saadahmed01/" target="_blank">linkedin.com/in/saadahmed01</p>
+            </div>
+        </div>
+        <div class="flex items-center " >
+            <div class="w-20 h-20 bg-gray-100 border-gray-200 border-[1px] flex items-center">
+              <img class="w-10 h-10 mx-auto" src="phone icon.png" alt="">
+            </div>
+            <div class="ml-2">
+              <p><a  class="text-blue-300 hover:underline" href="tel:+92 322 4136150">+92 322 4136150</a></p>
+            </div>
+        </div>
+      </div>  
+
+      <div class="right sm:-mt-10 md:mr-56">
+          <form class="flex flex-col" action="">
+            <input class="bg-gray-100 text-gray-500 border rounded-md mt-10 py-3 px-4 w-[80%]  active:bg-gray-200 font-sans " type="text" placeholder="Name">
+            <input class="bg-gray-100 text-gray-500 border rounded-md mt-4 py-3 px-4 w-[80%]  active:bg-gray-200 font-sans " type="email" placeholder="Email">
+            <input class="bg-gray-100 text-gray-500 border rounded-md mt-4 py-3 px-4 w-[80%]  active:bg-gray-200 font-sans " type="text" placeholder="Subject">
+            <textarea class="bg-gray-100  text-gray-500 border rounded-md mt-4 py-2 px-2 w-[80%] " name="message" id="/" cols="37" rows="8 " placeholder="Message"></textarea>
+            <button class="bg-blue-500 mt-6 py-2 border rounded-md text-white w-[80%] sm:w-40">SEND MESSAGE</button>
+          </form>
+      </div>
+
+
+
+    </div>  
+
+  </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector('[data-drawer-toggle="default-sidebar"]');
+    const sidebar = document.getElementById("default-sidebar");
+    const closeButton = document.getElementById("close-sidebar");
+
+    toggleButton.addEventListener("click", function () {
+      sidebar.classList.toggle("translate-x-0");
+    });
+
+    closeButton.addEventListener("click", function () {
+      sidebar.classList.remove("translate-x-0");
+    });
+  });
+
+  // Get all accordion titles and content
+  const accordionTitles = document.querySelectorAll('.accordion-title');
+  const accordionContents = document.querySelectorAll('.accordion-content');
+
+  // Add click event listeners to each title
+  accordionTitles.forEach((title, index) => {
+    title.addEventListener('click', () => {
+      // Toggle the 'hidden' class to show/hide content
+      accordionContents[index].classList.toggle('hidden');
+    });
+  });
+</script>
+</body>
+</html>
